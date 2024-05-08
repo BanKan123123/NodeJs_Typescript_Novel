@@ -3,7 +3,7 @@ import Category from "../../models/category.model";
 import ICategoryRepository from "../interface/category.interface";
 import AbstractRepository from "./abstract.implement";
 import connection from '../../config/database/server.connection';
-import { OkPacket, OkPacketParams } from "mysql2";
+import { OkPacket } from "mysql2";
 
 class CategoryRepository implements ICategoryRepository {
     save(category: Category): Promise<Category> {

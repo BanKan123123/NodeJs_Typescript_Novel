@@ -12,17 +12,15 @@ class ChapterRouter {
 
     initialize() {
 
+        this.router.post("/", this.chapterController.create);
+
         this.router.get("/", this.chapterController.findAll);
 
-        // this.router.post("/", this.controller.create);
+        this.router.put("/:slug", this.chapterController.update);
 
-        // this.router.get("/", this.controller.findAll);
+        this.router.delete("/:slug", this.chapterController.delete);
 
-        // this.router.put("/:slug", this.controller.update);
-
-        // this.router.delete("/:slug", this.controller.delete);
-
-        // this.router.delete("/", this.controller.deleteAll);
+        this.router.delete("/", this.chapterController.deleteAll);
     }
 }
 

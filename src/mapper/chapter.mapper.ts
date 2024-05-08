@@ -1,7 +1,5 @@
-import Book from "../models/book.model";
 import Chapter from "../models/chapter.model";
 import RowMapper from "./Row.interface";
-import connection from "../config/database/server.connection";
 import AbstractRepository from "../data/implements/abstract.implement";
 import BookMapper from "./book.mapper";
 
